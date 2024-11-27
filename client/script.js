@@ -15,7 +15,7 @@ function displayMovies(movies) {
     movieListElement.innerHTML = ''; // Clear the list
     movies.forEach(movie => {
         const movieCard = document.createElement('div');
-        movieCard.classList.add('movie-card');
+        movieCard.classList.add('movie-card');                 //Commento di prova
         movieCard.innerHTML = `
             <img src="${movie.poster}" alt="Movie Poster" />
             <h3>${movie.title}</h3>
