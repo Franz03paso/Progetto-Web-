@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Movie Streaming</h1>
+            <input type="text" id="search" placeholder="Cerca un film..." oninput="fetchMovies()">
+        </header>
+        <main>
+            <div id="movie-list" class="movie-list"></div>
+            <div id="movie-details" class="movie-details">
+                <button onclick="closeDetails()">Close</button>
+                <h2 id="movie-title"></h2>
+                <img id="movie-poster" alt="Movie Poster" />
+                <p id="movie-description"></p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
